@@ -108,13 +108,21 @@
               <form action="{% url 'cart:cart_add' product.id %}" method="post">
                 {{ item.update_quantity_form.quantity }}
                 {{ item.update_quantity_form.update }}
-                <input type="submit" value="Обновить цену">
+                <button style="margin: 10px;
+		    padding: 5px;
+		    border: 1px solid black;
+		    border-radius: 20px;">
+		    Обновить цену
+            	</button>
                 {% csrf_token %}
               </form>
             </td>
             <td>
             <form action="{% url 'cart:cart_remove' product.id %}">
-              <button>
+              <button style="margin: 10px;
+		    padding: 5px;
+		    border: 1px solid black;
+		    border-radius: 20px;">
                 Удалить
               </button>
             </form>

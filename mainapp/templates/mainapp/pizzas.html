@@ -14,14 +14,14 @@
             background: white;
         }
     </style>
-	{% for products in category %}
+    	{% for category in categories %}
+    	
 	    <pizzas>
-	    	<h4>{{ category }}</h4>
 		{% for product in products %}
 		<pizza>
 		    {% include 'mainapp/pizza.html' %}
 		</pizza>
 		{% endfor %}
 	    </pizzas>
-    	{% endfor %}
+	{% endfor %}
 </div>
