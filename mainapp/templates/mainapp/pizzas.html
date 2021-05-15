@@ -14,12 +14,13 @@
             background: white;
         }
     </style>
-
-    <pizzas>
-        {% for product in products %}
-        <pizza>
-            {% include 'mainapp/pizza.html' %}
-        </pizza>
-        {% endfor %}
-    </pizzas>
+	{% for products in cetegory %}
+	    <pizzas>
+		{% for product in products %}
+		<pizza>
+		    {% include 'mainapp/pizza.html' %}
+		</pizza>
+		{% endfor %}
+	    </pizzas>
+    	{% endfor %}
 </div>
