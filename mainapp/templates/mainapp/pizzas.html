@@ -15,13 +15,15 @@
         }
     </style>
     	{% for category in categories %}
-    	
 	    <pizzas>
 		{% for product in products %}
-		<pizza>
-		    {% include 'mainapp/pizza.html' %}
-		</pizza>
+			{% if product.category == category %}
+				<pizza>
+				    {% include 'mainapp/pizza.html' %}
+				</pizza>
+			{% endif %}
 		{% endfor %}
+		
 	    </pizzas>
 	{% endfor %}
 </div>
