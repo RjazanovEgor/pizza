@@ -14,8 +14,9 @@
             background: white;
         }
     </style>
-	{% for products in cetegory %}
+	{% for products in category %}
 	    <pizzas>
+	    	<h4>{{ category }}</h4>
 		{% for product in products %}
 		<pizza>
 		    {% include 'mainapp/pizza.html' %}
