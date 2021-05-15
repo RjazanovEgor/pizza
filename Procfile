@@ -1,1 +1,2 @@
-web: gunicorn tests.wsgi
+web: gunicorn pizzashop.wsgi
+
